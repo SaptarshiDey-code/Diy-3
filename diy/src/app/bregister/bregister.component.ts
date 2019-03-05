@@ -11,6 +11,7 @@ import { ActivatedRoute,Router } from "@angular/router";
 })
 export class BRegisterComponent implements OnInit {
 bid
+utype
 private BuserForm:FormGroup
   private Buser:any
   private errorMessage:string
@@ -23,6 +24,7 @@ private BuserForm:FormGroup
 //userType:any
 ngOnInit(){
   this.bid="DIY-"+Math.round(Math.random()*1000000)
+  this.utype='Business User'
   this.service.BfetchUsers((data)=>{
     this.Busers = data
 

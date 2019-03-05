@@ -13,6 +13,7 @@ import { RegisterComponent } from './register/register.component';
 import { BRegisterComponent } from './bregister/bregister.component';
 import { BloginComponent } from './blogin/blogin.component';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { LoginsComponent } from './logins/logins.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
     LoginComponent,
     RegisterComponent,
     BRegisterComponent,
-    BloginComponent
+    BloginComponent,
+    LoginsComponent
   ],
   imports: [
     BrowserModule,
